@@ -21,7 +21,7 @@ class AjaxController extends \SiteController
         
         $opts = $contents[$name];
         
-        $cache   = $opts['cahce'] ?? null;
+        $cache   = $opts['cache'] ?? null;
         $view    = $opts['view'];
         
         $handler = $opts['handler'];

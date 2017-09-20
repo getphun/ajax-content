@@ -10,7 +10,7 @@ namespace AjaxContent\Service;
 
 class Ajax {
     
-    public function content($name, $placement=null, $jscallback=null){
+    public function content($name, $placement=null, $jscallback=null, $device=1){
         $contents = \Phun::$config['ajax-content'] ?? [];
         
         if(!isset($contents[$name]))
@@ -26,6 +26,8 @@ class Ajax {
         $callback = $jscallback ?? $opt['callback'] ?? null;
         if($callback)
             $tx.= ' data-callback="' . $callback . '"';
+        $device = $device ?? $opt['callback'] ?? 1;
+        $tx.= ' data-device="'.$device.'"';
         
         $tx.= '></div>';
         

@@ -66,7 +66,10 @@ return [
             
             // optional, adalah fungsi js yang akan dipanggil ketika konten
             // sudah diisi
-            'callback' => 'initTargetAjax'
+            'callback' => 'initTargetAjax',
+            
+            // optional, target device dimana konten ini dimunculkan.
+            'device' => 1
         ]
     ]
 ];
@@ -85,3 +88,11 @@ Penjelasan masing-masing properti adalah sebagai berikut:
 6. callback  Adalah nama fungsi javascript yang akan dipanggil begitu konten berhasil
    ditempatkan di html, dengan parameter pertama adalah elemen pemanggil konten, dan
    parameter kedua adalah element hasil respond.
+7. device  Adalah target device dimana kontent ini akan diambil. Dimana:
+   1. Semua device
+   2. Hanya Desktop
+   3. Desktop dan Tablet
+   4. Desktop dan Handphone
+   5. Hanya Tablet
+   6. Tablet dan Handphone
+   7. Hanya Handphone

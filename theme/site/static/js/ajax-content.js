@@ -3,12 +3,22 @@ $(function(){
     if(!ctns.length)
         return;
     
+    var cDevice = [1,4,6,7];
+    if(screen.width >= 992)
+        cDevice = [1,2,3,4];
+    else if(screen.width >= 768)
+        cDevice = [1,3,5,6];
+    
     ctns.each(function(i,e){
         var el = $(e);
         
         var name      = el.data('ajax');
         var placement = el.data('placement');
         var callback  = el.data('callback');
+        var device    = parseInt((el.data('device') || 1));
+        
+        if(!~cDevice.indexOf(device))
+            return;
         
         var target = '/comp/ajax-content/'+name;
         

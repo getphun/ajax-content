@@ -11,8 +11,9 @@ return [
     '__version' => '0.0.1',
     '__git' => 'https://github.com/getphun/ajax-content',
     '__files' => [
-        'modules/ajax-content'                  => [ 'install', 'remove', 'update' ],
-        'theme/site/static/js/ajax-content.js'  => [ 'install', 'remove', 'update' ]
+        'modules/ajax-content'                      => [ 'install', 'remove', 'update' ],
+        'theme/site/static/js/ajax-content.js'      => [ 'install', 'remove', 'update' ],
+        'theme/site/static/js/ajax-content.min.js'  => [ 'install', 'remove', 'update' ]
     ],
     '__dependencies' => [],
     '_services' => [
