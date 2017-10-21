@@ -17,14 +17,20 @@ $(function(){
         var callback  = el.data('callback');
         var device    = parseInt((el.data('device') || 1));
         
-        if(!~cDevice.indexOf(device))
+        if(!~cDevice.indexOf(device)){
+            if(placement == 'replace')
+                el.remove();
             return;
+        }
         
         var target = '/comp/ajax-content/'+name;
         
         $.get(target, function(html){
-            if(!html)
+            if(!html){
+                if(placement == 'replace')
+                    el.remove();
                 return;
+            }
             
             html = $(html);
             switch(placement){
