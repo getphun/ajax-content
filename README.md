@@ -5,9 +5,9 @@ service dengan nama `ajax` dengan penggunaan seperti di bawah:
 
 ```
 // index.phtml
-<?= $this->ajax('target-ajax-1'); ?>
-<?= $this->ajax('target-ajax-2', 'placement'); ?>
-<?= $this->ajax('target-ajax-3', 'placement', 'initTargetAjax3'); ?>
+<?= $this->ajax->content('target-ajax-1'); ?>
+<?= $this->ajax->content('target-ajax-2', 'placement'); ?>
+<?= $this->ajax->content('target-ajax-3', 'placement', 'initTargetAjax3'); ?>
 ```
 
 Parameter pertama adalah nama ajax-handler sesuai dengan yang didaftarkan pada
