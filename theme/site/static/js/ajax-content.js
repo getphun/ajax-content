@@ -3,6 +3,11 @@ $(function(){
     if(!ctns.length)
         return;
     
+    // if it's from baca application, just don't crawl the ajax content
+    // as user won't even see it
+    if(/utm_source=android/.test(location.search) && /utm_medium=nip/.test(location.search))
+        return;
+    
     var cDevice = [1,4,6,7];
     if(screen.width >= 992)
         cDevice = [1,2,3,4];
