@@ -5,7 +5,7 @@ $(function(){
     
     // if it's from baca application, just don't crawl the ajax content
     // as user won't even see it
-    if(/utm_source=android/.test(location.search) && /utm_medium=nip/.test(location.search))
+    if(/utm_source=(android|Baca)/.test(location.search) && /utm_medium=(nip|Agregator)/.test(location.search))
         return;
     
     var cDevice = [1,4,6,7];
