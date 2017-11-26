@@ -10,7 +10,7 @@ namespace AjaxContent\Service;
 
 class Ajax {
     
-    public function content($name, $placement=null, $jscallback=null, $device=1){
+    public function content($name, $placement=null, $jscallback=null, $device=null){
         $contents = \Phun::$config['ajax-content'] ?? [];
         
         if(!isset($contents[$name]))

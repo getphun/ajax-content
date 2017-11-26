@@ -89,10 +89,10 @@ Penjelasan masing-masing properti adalah sebagai berikut:
    ditempatkan di html, dengan parameter pertama adalah elemen pemanggil konten, dan
    parameter kedua adalah element hasil respond.
 7. device  Adalah target device dimana kontent ini akan diambil. Dimana:
-   1. Semua device
-   2. Hanya Desktop
-   3. Desktop dan Tablet
-   4. Desktop dan Handphone
-   5. Hanya Tablet
-   6. Tablet dan Handphone
-   7. Hanya Handphone
+   - (1) Semua device
+   - (2) Hanya Desktop
+   - (3) Desktop dan Tablet
+   - (4) Desktop dan Handphone
+   - (5) Hanya Tablet
+   - (6) Tablet dan Handphone
+   - (7) Hanya Handphone
