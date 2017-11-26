@@ -26,7 +26,7 @@ class Ajax {
         $callback = $jscallback ?? $opt['callback'] ?? null;
         if($callback)
             $tx.= ' data-callback="' . $callback . '"';
-        $device = $device ?? $opt['callback'] ?? 1;
+        $device = $device ?? $opt['device'] ?? 1;
         $tx.= ' data-device="'.$device.'"';
         
         $tx.= '></div>';
